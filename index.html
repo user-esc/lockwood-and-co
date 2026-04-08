@@ -49,7 +49,18 @@
     
     .container {
       max-width: 1200px;
-      margin: 120px;
+      margin: 0 120px;
+    }
+    
+    .landing {
+      position: relative;
+      text-align: left;
+    }
+    
+    .overlay-text {
+      position: absolute;
+      bottom: 250px;
+      left: 10%;
     }
     
     .two-grids {
@@ -58,11 +69,10 @@
       align-items: center;
     }
     
-    
     .three-grids {
       display: grid;
       grid-template-columns: 33% 33% 33%;
-      align-items: center;  
+      align-items: top;  
       text-align: center;
     }
     
@@ -102,7 +112,8 @@
       background-color: red;
       text-align: center;
       margin: 0 120px;
-      padding: 10px 0;
+      padding: 2px 0;
+      z-index: 1000;
     }
 
     #nav a {
@@ -140,16 +151,13 @@
     }
     
     .button {
-      display: block;
+      display: inline-block;
       padding: 15px 50px;
       border: 1px solid white;
       color: white;
       text-decoration: none;
       border-radius: 100px;
-      position: absolute;
-      right: 650px;
     }
-
   </style>
 </head>
 <body>
@@ -162,9 +170,14 @@
     </div>
     
   <div class="container">
-    <h1 style="padding-top: 100px;">Lockwood & Co.</h1>
-    <p style="max-width: 800px;">An independent psychical investigation agency based in London, England, founded by Anthony Lockwood. Despite being the city's smallest agency, our team of sensitives are more than capable of handling any haunting!</p>
-    
+    <div class="landing">
+      <img src="placeholder.jpg" alt="yes" width="1200px;" height="700px">
+      <div class="overlay-text">
+        <h1 style="padding-top: 100px;">Lockwood & Co.</h1>
+        <p style="max-width: 500px;">An independent psychical investigation agency based in London, England, founded by Anthony Lockwood. Despite being the city's smallest agency, our team of sensitives are more than capable of handling any haunting!</p>
+      </div>
+    </div>
+
     <h2 style="text-align: center;">Our Mission</h2>
     <p style="text-align: center; max-width: 600px; margin: 0 25%; padding-bottom: 100px">
       Here at Lockwood & Co., we are dedicated to serving the public in Britain's fight against the Problem. We investigate hauntings, dealing with dangerous manifestations, with the goal of keeping the public safe. Whether you're troubled by lurkers, cold maidens, or wraiths, we're here to handle any disturbances.
@@ -202,14 +215,16 @@
       <div>
         <img src="placeholder.jpg" alt="yes" width="380px;" height="456px">
         <p>Anthony Lockwood</p>
+        <br>
+        <a href="agents.html" class="button">Learn More</a>
       </div>
       <div>
         <img src="placeholder.jpg" alt="yes" width="380px;" height="456px">
         <p>George Cubbins</p>
       </div>
     </div>
-    <hr style="visibility:hidden;">
-    <a href="agents.html" class="button">Learn More</a>
+    <br>
+    <br>
   </div>
       <footer>
       <div id="footer-grid">
