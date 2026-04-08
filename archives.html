@@ -90,14 +90,24 @@
     .single-container {
       border: 1px solid white;
       border-radius: 15px;
-      padding: 50px;
+      padding: 15px 50px;
     }
     
     .two-grids {
       display: grid;
-      grid-template-columns: 50% 50%;
-      grid-gap: 20px;
-      margin: 25px 0;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 25px;
+      padding: 40px 0;
+    }
+    
+    .blog {
+      display: grid;
+      grid-template-columns: 1.2fr 14fr 1fr;
+      overflow: hidden;
+      grid-gap: 30px;
+      align-items: start;
+      margin-top: 50px;
     }
     
     #footer-grid {
@@ -172,6 +182,7 @@
       border: none;
       height: 0.5px;
       background-color: white; 
+      margin: 50px 0;
     }
     
     .button {
@@ -215,15 +226,82 @@
     </div>
     
     <div class="two-grids">
-      <div class="single-container">
-        <h2 style="max-width: 300px">The Haunting of Combe Carey Hall</h2>
-        <p>Venturing into one of the most haunted mansion in England.</p>
-      </div>
-      <div class="single-container">
-        <h2 style="max-width: 300px">The Death of Annabel Ward</h2>
-        <p>Investigating the death of famous actress and society figure, Annabel Ward.</p>
-      </div>
+      <a href="https://www.goodreads.com/book/show/13555073-the-screaming-staircase" style="text-decoration: none; color: white; target="_blank"">
+        <div class="single-container">
+          <h2 style="max-width: 300px">The Haunting of Combe Carey Hall</h2>
+          <p>Venturing into one of the most haunted mansions in England, owned by Sir John Fairfax, owner of the Fairfax Iron.</p>
+        </div>
+      </a>
+      
+       <a href="https://www.goodreads.com/book/show/13555073-the-screaming-staircase" style="text-decoration: none; color: white; target="_blank"">
+        <div class="single-container">
+          <h2 style="max-width: 300px">The Death of Annabel Ward</h2>
+          <p>Re-investigating the death of famous actress and society figure, Annabel Ward, decades later.</p>
+        </div>
+      </a>
     </div>
+    
+    <h1>Blog Entries</h1>
+    <div class="blog">
+      <div><img src="placeholder.jpg" alt="yes" width="300px" height="250px"></div>
+      <div>
+        <h2 style="margin: 0">A Guide to Conflict Management</h2>
+        <p>GEORGE CUBBINS</p>
+        <p style="margin-top: 0;">Are you surrounded by gormless plonkers? Well me too. Here’s how to deal with your stubborn and facetious coworkers, while maintaining your sanity.</p>
+      </div>
+      <div><img src="placeholder.jpg" alt="yes" width="50px" height="50px"></div>
+    </div>
+    <hr>
+    <div class="blog">
+      <div><img src="placeholder.jpg" alt="yes" width="300px" height="250px"></div>
+      <div>
+        <h2 style="margin: 0">Protection against Ghost Lock</h2>
+        <p>LUCY CARLYLE</p>
+        <p style="margin-top: 0;">A guide to protecting yourself against Type Two visitor attacks, with a review of the most effective defenses against visitors.</p>
+      </div>
+      <div><img src="placeholder.jpg" alt="yes" width="50px" height="50px"></div>
+    </div>
+    <hr>
+    <div class="blog">
+      <div><img src="placeholder.jpg" alt="yes" width="300px" height="250px"></div>
+      <div>
+        <h2 style="margin: 0">The Incident at 62 Sheen Road</h2>
+        <p>ANTHONY LOCKWOOD, LUCY CARLYLE</p>
+        <p style="margin-top: 0;">DISPELLING THE RUMOURS SURROUNDING THE AGENCY’S LATEST CASE!!!! WE KNOW IT’S ALL OVER THE NEWS, BUT HERE IS OUR SIDE OF THE STORY!!!! PLEASE READ!!!!</p>
+      </div>
+      <div><img src="placeholder.jpg" alt="yes" width="50px" height="50px"></div>
+    </div>
+    <hr>
+    <div class="blog">
+      <div><img src="placeholder.jpg" alt="yes" width="300px" height="250px"></div>
+      <div>
+        <h2 style="margin: 0">A Guide to Conflict Management</h2>
+        <p>GEORGE CUBBINS</p>
+        <p style="margin-top: 0;">Are you surrounded by gormless plonkers? Well me too. Here’s how to deal with your stubborn and facetious coworkers, while maintaining your sanity.</p>
+      </div>
+      <div><img src="placeholder.jpg" alt="yes" width="50px" height="50px"></div>
+    </div>
+    <hr>
+    <div class="blog">
+      <div><img src="placeholder.jpg" alt="yes" width="300px" height="250px"></div>
+      <div>
+        <h2 style="margin: 0">A Brief History of The Problem</h2>
+        <p>GEORGE CUBBINS</p>
+        <p style="margin-top: 0;">Explore the 50 year timeline of the ghostly epidemic plaguing the British isles, alongside the rise of psychical agencies and corporations.</p>
+      </div>
+      <div><img src="placeholder.jpg" alt="yes" width="50px" height="50px"></div>
+    </div>
+    <hr>
+    <div class="blog">
+      <div><img src="placeholder.jpg" alt="yes" width="300px" height="250px"></div>
+      <div>
+        <h2 style="margin: 0">Introducing: Lockwood & Co.</h2>
+        <p>ANTHONY LOCKWOOD</p>
+        <p style="margin-top: 0;">Lockwood & Co.'s very first blog post to celebrate the launch of our website and introduce the agency, written by the one and only, Anthony Lockwood ;)!!</p>
+      </div>
+      <div><img src="placeholder.jpg" alt="yes" width="50px" height="50px"></div>
+    </div>
+    <hr>
   </div>
       <footer>
       <div id="footer-grid">
