@@ -2,6 +2,7 @@
 <html lang="en-CA">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lockwood &amp; Co</title>
   
   <!--Google Fonts-->
@@ -23,91 +24,208 @@
 
     .instrument-serif-regular {
       font-family: "Instrument Serif", serif;
-      font-weight: 400;
+      font-weight: 300;
       font-style: normal;
     }
 
     .instrument-serif-regular-italic {
       font-family: "Instrument Serif", serif;
-      font-weight: 400;
+      font-weight: 300;
       font-style: italic;
     }
     
+    * {
+      box-sizing: border-box;
+    }
+    
     body {
-      background-color: #232626;
+      background-color: #1C1C1C;
       font-family: "Overpass Mono", monospace;
-      font-size: 20px;
+      font-size: 18px;
       margin: 0 auto;
-      max-width:1440px;
+      max-width: 1440px;
       color: white;
     }
     
     .container {
       max-width: 1200px;
-      margin: 120px;
+      margin: 0 120px;
     }
     
-    .two-grids {
+    .landing {
+      position: relative;
+      text-align: left;
+    }
+    
+    .overlay-text {
+      position: absolute;
+      bottom: 250px;
+      left: 10%;
+    }
+    
+    .grid-container {
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: 60% 40%;
+      grid-gap: 20px;
+      border: 1px solid white;
+      border-radius: 15px;
+      padding: 50px;
     }
     
-    .three-grids {
-      
+    .big-case-image {
+      grid-row: 1 / span 2;
     }
     
-    nav {
-        
+    .case-text-grid {
+      display: grid;
+      grid-template-columns: 80% 20%;
+      grid-column: 1 / span 2;
+      margin-right: 20px;
     }
     
-    nav ul {
+    .case-text-grid img {
+      float: right;
+    }
+    
+    
+    #footer-grid {
+      display: grid;
+      grid-template-columns: 50% 20% 20%;
+      text-align: left;
+      align-items: top;
+      padding: 30px;
+      background-color: #282D2D;
+    }
+    
+    #footer-links {
       list-style-type: none;
-      margin: 0px;
-      padding: 0px;
-      overflow: hidden;
-      text-align: right;
+      margin-top: 50px;
+      line-height: 1.7;
     }
     
-    nav li {
-      display: inline;
-      padding: 0px 10px;
+    footer {
+      margin: 0 120px;
     }
     
-    nav a {
+    footer a {
       text-decoration: none;  
       color: white;
     }
     
-    nav a:hover {
+   footer a: hover {
+      text-decoration: none;  
+      color: red;
+    }
+    
+    #nav {
+      position: sticky;
+      top: 0;
+      overflow: hidden;
+      background-color: red;
+      text-align: center;
+      margin: 0 120px;
+      padding: 2px 0;
+      z-index: 1000;
+    }
+
+    #nav a {
+      text-decoration: none;  
+      color: white;
+      padding: 0px 20px;
+      font-size: 20px;
+    }
+    
+    #nav a:hover {
       color: #e3446c;
     }
     
     h1, h2, h3 {
       font-family: "Instrument Serif", serif; 
-      font-weight: 400;
+      font-weight: 300;
     }
     
     h1 {
       font-size: 4em;
     }
-
+    
+    h2 {
+      font-size: 2.5em;
+    }
+    
+    h3 {
+      font-size: 2em;
+    }
+    
+    hr {
+      border: none;
+      height: 0.5px;
+      background-color: white; 
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 15px 50px;
+      border: 1px solid white;
+      color: white;
+      text-decoration: none;
+      border-radius: 100px;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="agents.html">Agents</a></li>
-        <li><a href="archives.html">Archives</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    
-    <h1 style="padding-top: 100px;">Lockwood & Co.</h1>
-    <p>
-    At Greg's Banh Mi, we're serving up the perfect marriage of French and Vietnamese culinary traditions—crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavorus that'll make your taste buds sing.
-    </p>
+  <div id="nav">
+    <ul>
+      <a href="index.html">Home</a>
+      <a href="agents.html">Agents</a>
+      <a href="archives.html">Archives</a>
+      <a href="contact.html">Contact</a>
+    </ul>
   </div>
+    
+  <div class="container">
+    <h1 style="text-align:center; margin-bottom: 0">The Archives</h1>
+    <p style="text-align:center; margin-bottom: 30px">Official records of previous investigations, alongside our digital musings.</p>
+    <img src="placeholder.jpg" alt="yes" width="100%" height="632px">
+    
+    <h1>Investigative Case Studies</h1>
+    <div class="grid-container">
+      <div class="big-case-image"><img src="placeholder.jpg" alt="yes" width="650" height="500"></div>
+      <div><img src="placeholder.jpg" alt="yes" width="420" height="240"></div>
+      <div><img src="placeholder.jpg" alt="yes" width="420" height="240"></div> 
+      
+      <div class="case-text-grid">
+        <div>
+          <h2 style="margin: 0;">The Bickerstaff Case</h2>
+          <p>Our latest case! We investigate the rise in disturbances at Kensal Green Cemetery, uncovering the truth about Victorian doctor Edmund Bickerstaff.</p>
+        </div>
+        <div><img src="placeholder.jpg" alt="yes" width="60" height="60"></div>
+      </div> 
+    </div>
+  </div>
+      <footer>
+      <div id="footer-grid">
+        <div>
+          <h2 style="margin-left: 60px; max-width: 80%">After dark, ring the bell and wait beyond the iron line. </h2>
+        </div>
+        <div>
+          <ul id="footer-links">
+            <li>NAVIGATE</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agents.html">Agents</a></li>
+            <li><a href="archives.html">Archives</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul id="footer-links">
+            <li>CONTACT AND VISIT</li>
+            <li>35 Portland Row</li>
+            <li>273-923-344</li>
+            <li>e27cheun@uwaterloo.ca</li>
+          </ul>
+        </div>
+      </div>
+        <p style="text-align:center; font-size: 0.7em;">All intellectual property belongs to Jonathan Stroud! Artwork created by Ethney Cheung.</p>
+    </footer>
 </body>
 </html>
