@@ -138,7 +138,7 @@
     #footer-links {
       list-style-type: none;
       margin-top: 50px;
-      line-height: 1.7;
+      line-height: 2.5;
     }
     
     footer {
@@ -174,8 +174,15 @@
       font-size: 18px;
     }
     
-    #nav a:hover {
-      color: #e3446c;
+    footer a:hover {
+      text-decoration: none;  
+      color: red;
+    }
+    
+    .footer-contact {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
     
     h1, h2, h3 {
@@ -357,9 +364,12 @@
         <div>
           <ul id="footer-links">
             <li>CONTACT</li>
-            <li>35 Portland Row</li>
-            <li>273-923-344</li>
-            <li><a href="mailto:someone@example.com">e27cheun@uwaterloo.ca</a></li>
+            <li class="footer-contact"><img src="location.png" alt="location pin icon">
+              <span>35 Portland Row</span></li>
+            <li class="footer-contact"><img src="phone.png" alt="phone icon">
+              <span>273-923-344</span></li>
+            <li class="footer-contact"><img src="mail.png" alt="mail icon">
+              <a href="mailto:someone@example.com">e27cheun@uwaterloo.ca</a></li>
           </ul>
         </div>
       </div>
